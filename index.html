@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
+    <!-- ======== Header section Start ======= -->
 <head>
     <meta charset="UTF-8">
     <title>Samuel Louis's Personal Portfolio.</title>
@@ -10,42 +11,61 @@
 
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="./css/app.css">
+    <link rel="stylesheet" href="./css/sections.css">
+    <link rel="stylesheet" href="./css/particles.css">
+
 </head>
 
 <body>
-
-    <nav>
-        <div class="logo">
-            <img src="img/logo.jpg" class="logoImg" id="imgLogo" alt="" >
+    <!-- ======== Header section Start ======= -->
+    <header class="header-section sticky">
+        <div class="header">
+            <nav>
+                <div class="logo">
+                    <img src="img/logo.jpg" class="logoImg" id="imgLogo" alt="" >
+                </div>
+                <div class="hamburger">
+                 <div class="line1"></div>
+                 <div class="line2"></div>
+                 <div class="line3"></div>
+                </div>
+                <ul class="nav-links">
+                    <li class="active"><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><button class="join-button" href="#">En</button></li>
+                </ul>
+               </nav>
         </div>
-        <div class="hamburger">
-         <div class="line1"></div>
-         <div class="line2"></div>
-         <div class="line3"></div>
-        </div>
-        <ul class="nav-links">
-            <li class="active"><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><button class="join-button" href="#">En</button></li>
-        </ul>
-       </nav>
-    <!-- https://css-tricks.com/gooey-effect/ -->
+    </header>
 
-    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" id="filter-svg">
-        <defs>
-            <filter id="goo">
-                <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
-                <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
-                <feBlend in="SourceGraphic" in2="goo" />
-            </filter>
-        </defs>
-    </svg>
+    <!-- ======== Intro section ======= -->
+    <section class="intro-section fix" id="home">
+        <!--div id="particles-js">
+            <canvas class="particles-js-canvas-el" width="133" height="656"></canvas>
+        </div>
+
+        <div class="count-particles">
+            <span class="js-count-particles">--</span> particles
+          </div-->
+            <div class="intro-content">
+                <h1>Hello, I'm<span> Samuel Louis</span></h1>
+                <p class="intro-text">Computer Engineering Student</p>
+            </div>
+    </section>
+
+  
+
+    
+
 
     <script src="./js/app.js"></script>
+    <script src="./js/sections.js"></script>
+    <script src="./js/particles.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
 </body>
 
 </html>
